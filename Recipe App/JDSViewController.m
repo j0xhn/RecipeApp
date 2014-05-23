@@ -11,7 +11,8 @@
 @interface JDSViewController ()
 
 @end
-
+//define
+static NSString *recipeCellIdentifier = @"RecipeCell";
 @implementation JDSViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -23,34 +24,31 @@
     return self;
 }
 
+- (NSInteger)tableView:(UITableView *)mainTableView numberOfRowsInSection:(NSInteger)section
+{
+    return 2;
+}
+// required for TableViewDataSource
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell =
+    (UITableViewCell *)[tableView dequeueReusableCellWithIdentifier:recipeCellIdentifier
+                                                            forIndexPath:indexPath];
+    
+    cell.textLabel.text = @"This text will appear in the cell";
+    
+    return cell;
+}
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
-    UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - 64)];
+    UITableView *mainTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - 64)];
     
-    [self.view addSubview:tableView];
-    // sets title
-
-    // adds button
-//    UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
-//    [button addTarget:self
-//               action:@selector(changeText)
-//     forControlEvents:UIControlEventTouchUpInside];
-//    [button setTitle:@"My Button" forState:UIControlStateNormal];
-//    button.frame = CGRectMake(80.0, 210.0, 160.0, 40.0);
-//    button.backgroundColor = [UIColor lightGrayColor];
-//    
-//   // sets it to view
-//   [self.view addSubview:button];
-//    // adds label
-//    
-//    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 130, self.view.frame.size.width, 20)];
-//    [self.view addSubview:label];
-//    label.text = @"Hi";
-//    label.textAlignment = NSTextAlignmentCenter;
-//    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(91, 15,0,0)];
-//    fromLabel.text = text;
+    [self.view addSubview:mainTableView];
+    // required for TableViewDataSource
     
 }
 -(void)changeText

@@ -20,7 +20,7 @@
 		F59A27FB192ECCC0005304CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F59A27F9192ECCC0005304CE /* InfoPlist.strings */; };
 		F59A27FD192ECCC0005304CE /* Recipe_AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F59A27FC192ECCC0005304CE /* Recipe_AppTests.m */; };
 		F59A2808192ECE4D005304CE /* JDSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F59A2807192ECE4D005304CE /* JDSViewController.m */; };
-		F59A280E192EDDE9005304CE /* JDSTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F59A280D192EDDE9005304CE /* JDSTableViewController.m */; };
+		F59A2811192EE6C2005304CE /* JDSTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F59A2810192EE6C2005304CE /* JDSTableViewDataSource.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +52,8 @@
 		F59A27FC192ECCC0005304CE /* Recipe_AppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Recipe_AppTests.m; sourceTree = "<group>"; };
 		F59A2806192ECE4D005304CE /* JDSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDSViewController.h; sourceTree = "<group>"; };
 		F59A2807192ECE4D005304CE /* JDSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDSViewController.m; sourceTree = "<group>"; };
-		F59A280C192EDDE9005304CE /* JDSTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDSTableViewController.h; sourceTree = "<group>"; };
-		F59A280D192EDDE9005304CE /* JDSTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDSTableViewController.m; sourceTree = "<group>"; };
+		F59A280F192EE6C2005304CE /* JDSTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JDSTableViewDataSource.h; path = ../JDSTableViewDataSource.h; sourceTree = "<group>"; };
+		F59A2810192EE6C2005304CE /* JDSTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JDSTableViewDataSource.m; path = ../JDSTableViewDataSource.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +83,6 @@
 		F59A27CB192ECCC0005304CE = {
 			isa = PBXGroup;
 			children = (
-				F59A280C192EDDE9005304CE /* JDSTableViewController.h */,
-				F59A280D192EDDE9005304CE /* JDSTableViewController.m */,
 				F59A27DD192ECCC0005304CE /* Recipe App */,
 				F59A27F6192ECCC0005304CE /* Recipe AppTests */,
 				F59A27D6192ECCC0005304CE /* Frameworks */,
@@ -115,6 +113,8 @@
 		F59A27DD192ECCC0005304CE /* Recipe App */ = {
 			isa = PBXGroup;
 			children = (
+				F59A280F192EE6C2005304CE /* JDSTableViewDataSource.h */,
+				F59A2810192EE6C2005304CE /* JDSTableViewDataSource.m */,
 				F59A27E6192ECCC0005304CE /* JDSAppDelegate.h */,
 				F59A27E7192ECCC0005304CE /* JDSAppDelegate.m */,
 				F59A2806192ECE4D005304CE /* JDSViewController.h */,
@@ -252,8 +252,8 @@
 			files = (
 				F59A27E8192ECCC0005304CE /* JDSAppDelegate.m in Sources */,
 				F59A27E4192ECCC0005304CE /* main.m in Sources */,
+				F59A2811192EE6C2005304CE /* JDSTableViewDataSource.m in Sources */,
 				F59A2808192ECE4D005304CE /* JDSViewController.m in Sources */,
-				F59A280E192EDDE9005304CE /* JDSTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,6 +450,7 @@
 				F59A2802192ECCC0005304CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F59A2803192ECCC0005304CE /* Build configuration list for PBXNativeTarget "Recipe AppTests" */ = {
 			isa = XCConfigurationList;
@@ -458,6 +459,7 @@
 				F59A2805192ECCC0005304CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

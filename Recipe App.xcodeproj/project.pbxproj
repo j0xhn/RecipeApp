@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F59A27D8192ECCC0005304CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F59A27D7192ECCC0005304CE /* Foundation.framework */; };
+		F59A27DA192ECCC0005304CE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F59A27D9192ECCC0005304CE /* CoreGraphics.framework */; };
+		F59A27DC192ECCC0005304CE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F59A27DB192ECCC0005304CE /* UIKit.framework */; };
+		F59A27E2192ECCC0005304CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F59A27E0192ECCC0005304CE /* InfoPlist.strings */; };
+		F59A27E4192ECCC0005304CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F59A27E3192ECCC0005304CE /* main.m */; };
+		F59A27E8192ECCC0005304CE /* JDSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F59A27E7192ECCC0005304CE /* JDSAppDelegate.m */; };
+		F59A27EA192ECCC0005304CE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F59A27E9192ECCC0005304CE /* Images.xcassets */; };
+		F59A27F1192ECCC0005304CE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F59A27F0192ECCC0005304CE /* XCTest.framework */; };
+		F59A27F2192ECCC0005304CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F59A27D7192ECCC0005304CE /* Foundation.framework */; };
+		F59A27F3192ECCC0005304CE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F59A27DB192ECCC0005304CE /* UIKit.framework */; };
+		F59A27FB192ECCC0005304CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F59A27F9192ECCC0005304CE /* InfoPlist.strings */; };
+		F59A27FD192ECCC0005304CE /* Recipe_AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F59A27FC192ECCC0005304CE /* Recipe_AppTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F59A27F4192ECCC0005304CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F59A27CC192ECCC0005304CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F59A27D3192ECCC0005304CE;
+			remoteInfo = "Recipe App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F59A27D4192ECCC0005304CE /* Recipe App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Recipe App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F59A27D7192ECCC0005304CE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F59A27D9192ECCC0005304CE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F59A27DB192ECCC0005304CE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F59A27DF192ECCC0005304CE /* Recipe App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Recipe App-Info.plist"; sourceTree = "<group>"; };
+		F59A27E1192ECCC0005304CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F59A27E3192ECCC0005304CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F59A27E5192ECCC0005304CE /* Recipe App-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Recipe App-Prefix.pch"; sourceTree = "<group>"; };
+		F59A27E6192ECCC0005304CE /* JDSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDSAppDelegate.h; sourceTree = "<group>"; };
+		F59A27E7192ECCC0005304CE /* JDSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDSAppDelegate.m; sourceTree = "<group>"; };
+		F59A27E9192ECCC0005304CE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F59A27EF192ECCC0005304CE /* Recipe AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Recipe AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F59A27F0192ECCC0005304CE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F59A27F8192ECCC0005304CE /* Recipe AppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Recipe AppTests-Info.plist"; sourceTree = "<group>"; };
+		F59A27FA192ECCC0005304CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F59A27FC192ECCC0005304CE /* Recipe_AppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Recipe_AppTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F59A27D1192ECCC0005304CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F59A27DA192ECCC0005304CE /* CoreGraphics.framework in Frameworks */,
+				F59A27DC192ECCC0005304CE /* UIKit.framework in Frameworks */,
+				F59A27D8192ECCC0005304CE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F59A27EC192ECCC0005304CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F59A27F1192ECCC0005304CE /* XCTest.framework in Frameworks */,
+				F59A27F3192ECCC0005304CE /* UIKit.framework in Frameworks */,
+				F59A27F2192ECCC0005304CE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F59A27CB192ECCC0005304CE = {
+			isa = PBXGroup;
+			children = (
+				F59A27DD192ECCC0005304CE /* Recipe App */,
+				F59A27F6192ECCC0005304CE /* Recipe AppTests */,
+				F59A27D6192ECCC0005304CE /* Frameworks */,
+				F59A27D5192ECCC0005304CE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F59A27D5192ECCC0005304CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F59A27D4192ECCC0005304CE /* Recipe App.app */,
+				F59A27EF192ECCC0005304CE /* Recipe AppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F59A27D6192ECCC0005304CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F59A27D7192ECCC0005304CE /* Foundation.framework */,
+				F59A27D9192ECCC0005304CE /* CoreGraphics.framework */,
+				F59A27DB192ECCC0005304CE /* UIKit.framework */,
+				F59A27F0192ECCC0005304CE /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F59A27DD192ECCC0005304CE /* Recipe App */ = {
+			isa = PBXGroup;
+			children = (
+				F59A27E6192ECCC0005304CE /* JDSAppDelegate.h */,
+				F59A27E7192ECCC0005304CE /* JDSAppDelegate.m */,
+				F59A27E9192ECCC0005304CE /* Images.xcassets */,
+				F59A27DE192ECCC0005304CE /* Supporting Files */,
+			);
+			path = "Recipe App";
+			sourceTree = "<group>";
+		};
+		F59A27DE192ECCC0005304CE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F59A27DF192ECCC0005304CE /* Recipe App-Info.plist */,
+				F59A27E0192ECCC0005304CE /* InfoPlist.strings */,
+				F59A27E3192ECCC0005304CE /* main.m */,
+				F59A27E5192ECCC0005304CE /* Recipe App-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F59A27F6192ECCC0005304CE /* Recipe AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				F59A27FC192ECCC0005304CE /* Recipe_AppTests.m */,
+				F59A27F7192ECCC0005304CE /* Supporting Files */,
+			);
+			path = "Recipe AppTests";
+			sourceTree = "<group>";
+		};
+		F59A27F7192ECCC0005304CE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F59A27F8192ECCC0005304CE /* Recipe AppTests-Info.plist */,
+				F59A27F9192ECCC0005304CE /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F59A27D3192ECCC0005304CE /* Recipe App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F59A2800192ECCC0005304CE /* Build configuration list for PBXNativeTarget "Recipe App" */;
+			buildPhases = (
+				F59A27D0192ECCC0005304CE /* Sources */,
+				F59A27D1192ECCC0005304CE /* Frameworks */,
+				F59A27D2192ECCC0005304CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Recipe App";
+			productName = "Recipe App";
+			productReference = F59A27D4192ECCC0005304CE /* Recipe App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F59A27EE192ECCC0005304CE /* Recipe AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F59A2803192ECCC0005304CE /* Build configuration list for PBXNativeTarget "Recipe AppTests" */;
+			buildPhases = (
+				F59A27EB192ECCC0005304CE /* Sources */,
+				F59A27EC192ECCC0005304CE /* Frameworks */,
+				F59A27ED192ECCC0005304CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F59A27F5192ECCC0005304CE /* PBXTargetDependency */,
+			);
+			name = "Recipe AppTests";
+			productName = "Recipe AppTests";
+			productReference = F59A27EF192ECCC0005304CE /* Recipe AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F59A27CC192ECCC0005304CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JDS;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = d;
+				TargetAttributes = {
+					F59A27EE192ECCC0005304CE = {
+						TestTargetID = F59A27D3192ECCC0005304CE;
+					};
+				};
+			};
+			buildConfigurationList = F59A27CF192ECCC0005304CE /* Build configuration list for PBXProject "Recipe App" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F59A27CB192ECCC0005304CE;
+			productRefGroup = F59A27D5192ECCC0005304CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F59A27D3192ECCC0005304CE /* Recipe App */,
+				F59A27EE192ECCC0005304CE /* Recipe AppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F59A27D2192ECCC0005304CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F59A27E2192ECCC0005304CE /* InfoPlist.strings in Resources */,
+				F59A27EA192ECCC0005304CE /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F59A27ED192ECCC0005304CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F59A27FB192ECCC0005304CE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F59A27D0192ECCC0005304CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F59A27E8192ECCC0005304CE /* JDSAppDelegate.m in Sources */,
+				F59A27E4192ECCC0005304CE /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F59A27EB192ECCC0005304CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F59A27FD192ECCC0005304CE /* Recipe_AppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F59A27F5192ECCC0005304CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F59A27D3192ECCC0005304CE /* Recipe App */;
+			targetProxy = F59A27F4192ECCC0005304CE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F59A27E0192ECCC0005304CE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F59A27E1192ECCC0005304CE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F59A27F9192ECCC0005304CE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F59A27FA192ECCC0005304CE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F59A27FE192ECCC0005304CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F59A27FF192ECCC0005304CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F59A2801192ECCC0005304CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Recipe App/Recipe App-Prefix.pch";
+				INFOPLIST_FILE = "Recipe App/Recipe App-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F59A2802192ECCC0005304CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Recipe App/Recipe App-Prefix.pch";
+				INFOPLIST_FILE = "Recipe App/Recipe App-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F59A2804192ECCC0005304CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Recipe App.app/Recipe App";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Recipe App/Recipe App-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Recipe AppTests/Recipe AppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		F59A2805192ECCC0005304CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Recipe App.app/Recipe App";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Recipe App/Recipe App-Prefix.pch";
+				INFOPLIST_FILE = "Recipe AppTests/Recipe AppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F59A27CF192ECCC0005304CE /* Build configuration list for PBXProject "Recipe App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F59A27FE192ECCC0005304CE /* Debug */,
+				F59A27FF192ECCC0005304CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F59A2800192ECCC0005304CE /* Build configuration list for PBXNativeTarget "Recipe App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F59A2801192ECCC0005304CE /* Debug */,
+				F59A2802192ECCC0005304CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F59A2803192ECCC0005304CE /* Build configuration list for PBXNativeTarget "Recipe AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F59A2804192ECCC0005304CE /* Debug */,
+				F59A2805192ECCC0005304CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F59A27CC192ECCC0005304CE /* Project object */;
+}

@@ -7,12 +7,13 @@
 //
 
 #import "JDSViewController.h"
+#import "JDSTableViewDataSource.h"
 
 @interface JDSViewController ()
 
 @end
 //define
-static NSString *recipeCellIdentifier = @"RecipeCell";
+
 @implementation JDSViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -24,22 +25,6 @@ static NSString *recipeCellIdentifier = @"RecipeCell";
     return self;
 }
 
-- (NSInteger)tableView:(UITableView *)mainTableView numberOfRowsInSection:(NSInteger)section
-{
-    return 2;
-}
-// required for TableViewDataSource
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    UITableViewCell *cell =
-    (UITableViewCell *)[tableView dequeueReusableCellWithIdentifier:recipeCellIdentifier
-                                                            forIndexPath:indexPath];
-    
-    cell.textLabel.text = @"This text will appear in the cell";
-    
-    return cell;
-}
-
 
 - (void)viewDidLoad
 {
@@ -47,14 +32,10 @@ static NSString *recipeCellIdentifier = @"RecipeCell";
     
     UITableView *mainTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - 64)];
     
-    [self.view addSubview:mainTableView];
-    // required for TableViewDataSource
+//    [mainTableView setDataSource:data];
     
-}
--(void)changeText
-{
-    // witw?
-//    self.label.text = [NSString stringWithFormat: @"%d", 0];
+    [self.view addSubview:mainTableView];
+    
     
 }
 

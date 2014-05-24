@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JDSTableViewDataSource.h"
 
 @interface JDSViewController : UIViewController
+
 
 @end

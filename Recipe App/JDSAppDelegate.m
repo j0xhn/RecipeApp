@@ -16,19 +16,13 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     JDSViewController *viewController = [JDSViewController new];
-    self.window.rootViewController = viewController;
     viewController.title = @"Recipe App";
     
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:viewController];
-    nav.navigationBar.translucent = NO;
     self.window.rootViewController = nav;
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
-    
-//    [navBar setBackgroundColor:[UIColor blueColor]];
-//    [self.window addSubview:navBar];
-    
     
     return YES;
 }

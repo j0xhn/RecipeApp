@@ -119,7 +119,7 @@ recipeDictionary = [[NSDictionary alloc] initWithObjectsAndKeys:
 //                         
 //                         nil];
 //
-//recipeArray = [[NSDictionary alloc] initWithDictionary:(NSDictionary *)recipe];
+//recipeDictionary = [[NSDictionary alloc] initWithDictionary:(NSDictionary *)recipe];
 
 @end
 ```

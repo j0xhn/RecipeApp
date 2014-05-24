@@ -10,13 +10,8 @@
 
 @interface JDSTableViewDataSource : NSObject <UITableViewDataSource>
 // data types
-@property (nonatomic, strong) NSDictionary *recipeDictionary;
-@property (nonatomic, strong) NSDictionary *recipe;
-@property (nonatomic, strong) NSString *name;
-@property (nonatomic, strong) NSString *description;
-@property (strong, nonatomic) NSObject *data;
+- (void)registerTableView:(UITableView *)tableView;
 
-
-
+- (CGFloat)heightForIndexPath:(NSIndexPath *)indexPath;
 
 @end

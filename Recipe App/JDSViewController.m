@@ -9,10 +9,14 @@
 #import "JDSViewController.h"
 #import "JDSTableViewDataSource.h"
 
-@interface JDSViewController ()
+@interface JDSViewController () <UITableViewDelegate>
+
+@property (nonatomic, strong) JDSTableViewDataSource *dataSource;
+@property (nonatomic, strong) UITableView *tableView;
 
 @end
 //define
+
 
 @implementation JDSViewController
 
@@ -30,13 +34,17 @@
 {
     [super viewDidLoad];
     
-    UITableView *mainTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - 64)];
+    self.title = @"Recipes to Kill";
     
-//    [mainTableView setDataSource:data];
-    
+    UITableView *mainTableView = [[UITableView alloc] initWithFrame:self.view.bounds];
+    mainTableView.delegate = self;
     [self.view addSubview:mainTableView];
     
-    
+    JDSTableViewDataSource *dataSource = [JDSTableViewDataSource new];
+    [dataSource registerTableView:mainTableView];
+    self.dataSource = dataSource;
+
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -44,15 +52,16 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+// completely optional, but sets hight of Row
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    return [self.dataSource heightForIndexPath:indexPath];
+    
 }
-*/
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+}
 @end

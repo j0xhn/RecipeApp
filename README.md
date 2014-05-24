@@ -6,7 +6,7 @@ RecipeApp
 ++ deque your cells
 + Focus of App is to display information from App in table view
 
-Steps
+MY Steps
 =========
 
 1) In AppDelegate you'll create a navigation controller, then add a table view inside of it.
@@ -122,6 +122,51 @@ recipeDictionary = [[NSDictionary alloc] initWithObjectsAndKeys:
 //recipeDictionary = [[NSDictionary alloc] initWithDictionary:(NSDictionary *)recipe];
 
 @end
+```
+Assumptions
+=========
+1) I didn't have <UITableViewDelegate> on the ViewController.  I'm assuming that everytime you start using delegates (like <UIApplicationDelegate> that you need delegats on each view that's going to be interacting with Data... true?
+```
+<UITableViewDelegate>
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section;
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath;
+```
+
+2) I didn't include these properties.  These don't seem necessary.  They COULD be included by themselves and these are just to make it nicer? For UITableView at least because that works anywhere, however I think the *dataSource is important because I was having difficulty with that one.
+```
+@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) RARecipeTableViewDatasource *dataSource;
+
+```
+3) Switched out "CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - 64)];" for "self.view.bounds];"
+
+4) Replaced "[mainTableView setDataSource:data];" with lots of code found below, and the "registerTableView" was tricky.  Couldn't really find any examples or documentation for it under the UITableViewDataSource or online for that matter.
+```
+    JDSTableViewDataSource *dataSource = [JDSTableViewDataSource new];
+    [dataSource registerTableView:mainTableView];
+    self.dataSource = dataSource;
+```
+
+5) These aren't required... how did you know you were supposed to include things like this? Also I get that an indexPath is the address to a cell within an Array... but I'm assuming you want to find how close to the top it is?  Where are we using this information?  And with the implementation why do you add the strange beginning? The other one didn't need it?
+```
+- (void)registerTableView:(UITableView *)tableView;
+
+- (CGFloat)heightForIndexPath:(NSIndexPath *)indexPath;
+---
+- (void)registerTableView:(UITableView *)tableView {
+    
+    [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:cellIdentifier];
+    
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+
+    return [self.dataSource heightForIndexPath:indexPath];
+
+}
+```
+6) how do you know to do something like this? And by looking at the documentation I would never have guessed to put the class in [ ] brackets.  How did you know?
+```
+[tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:cellIdentifier];
 ```
 
 

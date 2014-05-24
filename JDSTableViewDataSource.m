@@ -30,8 +30,8 @@ static NSString * const cellIdentifier = @"identifier";
     (UITableViewCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier
                                                        forIndexPath:indexPath];
     
+   cell.textLabel.text = [JDSRecipe titleAtIndex:indexPath.row ];
     
-    cell.textLabel.text = @"test";
     
     return cell;
 }

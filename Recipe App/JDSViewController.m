@@ -43,7 +43,10 @@
     JDSTableViewDataSource *dataSource = [JDSTableViewDataSource new];
     [dataSource registerTableView:mainTableView];
     self.dataSource = dataSource;
-
+    
+    mainTableView.dataSource = dataSource;
+    self.tableView = mainTableView;
+    
 
 }
 

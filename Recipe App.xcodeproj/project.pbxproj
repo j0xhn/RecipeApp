@@ -22,6 +22,7 @@
 		F59A2808192ECE4D005304CE /* JDSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F59A2807192ECE4D005304CE /* JDSViewController.m */; };
 		F59A2811192EE6C2005304CE /* JDSTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F59A2810192EE6C2005304CE /* JDSTableViewDataSource.m */; };
 		F59A281719307314005304CE /* JDSRecipe.m in Sources */ = {isa = PBXBuildFile; fileRef = F59A281619307314005304CE /* JDSRecipe.m */; };
+		F59A281A19311134005304CE /* JDSDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F59A281919311134005304CE /* JDSDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		F59A2810192EE6C2005304CE /* JDSTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JDSTableViewDataSource.m; path = ../JDSTableViewDataSource.m; sourceTree = "<group>"; };
 		F59A281519307314005304CE /* JDSRecipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDSRecipe.h; sourceTree = "<group>"; };
 		F59A281619307314005304CE /* JDSRecipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDSRecipe.m; sourceTree = "<group>"; };
+		F59A281819311134005304CE /* JDSDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDSDetailViewController.h; sourceTree = "<group>"; };
+		F59A281919311134005304CE /* JDSDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDSDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +125,8 @@
 				F59A2807192ECE4D005304CE /* JDSViewController.m */,
 				F59A280F192EE6C2005304CE /* JDSTableViewDataSource.h */,
 				F59A2810192EE6C2005304CE /* JDSTableViewDataSource.m */,
+				F59A281819311134005304CE /* JDSDetailViewController.h */,
+				F59A281919311134005304CE /* JDSDetailViewController.m */,
 				F59A281519307314005304CE /* JDSRecipe.h */,
 				F59A281619307314005304CE /* JDSRecipe.m */,
 				F59A27E9192ECCC0005304CE /* Images.xcassets */,
@@ -260,6 +265,7 @@
 				F59A27E4192ECCC0005304CE /* main.m in Sources */,
 				F59A2811192EE6C2005304CE /* JDSTableViewDataSource.m in Sources */,
 				F59A2808192ECE4D005304CE /* JDSViewController.m in Sources */,
+				F59A281A19311134005304CE /* JDSDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

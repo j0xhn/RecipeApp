@@ -26,18 +26,36 @@ static NSString * const cellIdentifier = @"identifier";
 // required for UIApplicationDelegate
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell =
-    (UITableViewCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier
+    UITableViewCell *cell = (UITableViewCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier
                                                        forIndexPath:indexPath];
     
-   cell.textLabel.text = [JDSRecipe titleAtIndex:indexPath.row ];
+    cell.textLabel.text = [JDSRecipe titleAtIndex:indexPath.row ];
+    cell.detailTextLabel.text = [JDSRecipe descriptionAtIndex:indexPath.row ];
+    
+    NSLog(@"%@", indexPath.description);
     
     
     return cell;
 }
-// determined row height, optional
-- (CGFloat)heightForIndexPath:(NSIndexPath *)indexPath {
-    return 44;
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    NSString *sectionName;
+    switch (section)
+    {
+        case 0:
+            sectionName = NSLocalizedString(@"Recipes.com", @"First Section Name");
+            break;
+        case 1:
+            sectionName = NSLocalizedString(@"Other Recipes", @"Second Section Name");
+            break;
+            // ...
+        default:
+            sectionName = @"";
+            break;
+    }
+    return sectionName;
 }
+
 
 @end

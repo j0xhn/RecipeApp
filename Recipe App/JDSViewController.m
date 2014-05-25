@@ -8,11 +8,15 @@
 
 #import "JDSViewController.h"
 #import "JDSTableViewDataSource.h"
+#import "JDSRecipe.h"
+#import "JDSAppDelegate.h"
+#import "JDSDetailViewController.h"
 
 @interface JDSViewController () <UITableViewDelegate>
 
 @property (nonatomic, strong) JDSTableViewDataSource *dataSource;
 @property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) UIView *detailView;
 
 @end
 //define
@@ -34,11 +38,10 @@
 {
     [super viewDidLoad];
     
-    self.title = @"Recipes to Kill";
-    
     UITableView *mainTableView = [[UITableView alloc] initWithFrame:self.view.bounds];
     mainTableView.delegate = self;
     [self.view addSubview:mainTableView];
+    self.title = @"Recipes to Kill";
     
     JDSTableViewDataSource *dataSource = [JDSTableViewDataSource new];
     [dataSource registerTableView:mainTableView];
@@ -58,13 +61,28 @@
 // completely optional, but sets hight of Row
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    return [self.dataSource heightForIndexPath:indexPath];
+    if ([[JDSRecipe typeAtIndex:indexPath.row] isEqualToString:@"Dessert"]) {
+        NSLog(@"The type of this recipe is: %@", [JDSRecipe typeAtIndex:indexPath.row] );
+        return 100;
+        
+    } else {
+        return 44;
+    }
     
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+//    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+//    NSLog(@"You Clicked: %@", [JDSRecipe titleAtIndex:indexPath.row] );
+    
+    JDSDetailViewController *newDetailView = [[JDSDetailViewController alloc] init];
+    newDetailView.recipeIndex = indexPath.row;
+    [self.navigationController pushViewController:newDetailView animated:YES];
+//    self.title = [JDSRecipe titleAtIndex:indexPath.row];
+
+
     
 }
+
 @end

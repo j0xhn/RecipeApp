@@ -12,6 +12,6 @@
 // data types
 - (void)registerTableView:(UITableView *)tableView;
 
-- (CGFloat)heightForIndexPath:(NSIndexPath *)indexPath;
+- (CGFloat)heightForIndexPath:(NSInteger)indexPosition;
 
 @end
